@@ -1,0 +1,45 @@
+"dev":"nodemon script.js" is added in start of nodejs on 18/09/2022 for adding react to nodejs.
+
+Link for geeks for geeks :-  {https:wwwgeeksforgeeksorghow-to-connect-node-js-with-react-js#:~:text=export%20default%20App%3BReactJS%20is%20connected%20with%20NodeJS.}
+
+<form action="../../post" method="post" 
+              className="form"><button type="submit">Connected?</button></form>*/
+        
+
+              <form method="post" action="/post">
+
+                <h1 class="headline_login">Login Form</h1>
+                <br /><br />
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><b>Username</b></label>
+                  <br />
+                  <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="username" />
+                  <br />
+          
+                </div>
+                <div class="mb-3">
+                  <br />
+                  <label for="exampleInputPassword1" class="form-label"><b>Password</b></label><br />
+                  <input type="text" class="form-control" id="password" name="password" /><br />
+          
+                </div>
+                <div class="mb-3">
+                  <br />
+                  <label for="exampleInputPassword1" class="form-label"><b>Vacancy</b></label><br /><br />
+                  <input type="text" class="form-control" id="vacancy" name="vacancy" /><br /><br />
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+          
+              </form>    
+
+
+on 21/09/2022 is <div className="box_index">{index + 1}.</div> and in css 
+.box_index{
+  margin-left: 20px;
+  margin-top: 2.5%;
+  font-style: bold;
+  font-size: large;
+}
+
+"proxy": "http://localhost:5000", removed this line from package.json in client
