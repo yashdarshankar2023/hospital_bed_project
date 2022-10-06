@@ -42,4 +42,4 @@ on 21/09/2022 is <div className="box_index">{index + 1}.</div> and in css
   font-size: large;
 }
 
-"proxy": "http://localhost:5000", removed this line from package.json in client
+ removed this line from package.json in client
