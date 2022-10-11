@@ -26,6 +26,7 @@ app.post("/login",async(req, res) => {
 });
 
 app.get("/api", function (request, response) {
+    
     async function run() {
         try {
             await client.connect();
@@ -51,7 +52,7 @@ app.post("/getemail", function (request, response) {
 
 
 
-    var username = request.body.username;
+    var appid = request.body.appid;
     var password = request.body.password;
     var vacancy = request.body.vacancy;
     async function run() {
@@ -59,14 +60,58 @@ app.post("/getemail", function (request, response) {
             await client.connect();
             const db = client.db(dbName);
             const col = db.collection("hospital_info");
-            const mydoc1 = await col.findOne({ "name": username });
-            if (mydoc1.name == username && mydoc1.password == password) {
-                await col.findOneAndUpdate({ "name": username }, { $set: { "vacancy": vacancy } });
+            const mydoc1 = await col.findOne({ "application_id": appid });
+            if (mydoc1.application_id == appid && mydoc1.password == password) {
+                await col.findOneAndUpdate({ "application_id": appid }, { $set: { "vacancy": vacancy } });
             }
         } catch (err) {
             console.log(err.stack);
         }
         finally {
+            await client.close();
+        }
+    }
+    run().catch(console.dir);
+});
+
+
+app.post("/Pregister", function (request, response){
+    var username = request.body.usernameregister;
+    var password = request.body.passwordregister;
+    var password1 = request.body.password1register;
+    var application_id = request.body.r_appid;
+    var vacancy = request.body.r_vacancy;
+    var contact = request.body.number;
+    
+    
+
+    async function run() {
+        try {
+             await client.connect();
+             console.log("Connected correctly to server");
+             const db = client.db(dbName);
+             const col = db.collection("hospital_info");                                                                                                                                                              
+             let personDocument = {
+                 "name":username,
+                 "application_id":application_id,
+                 "vacancy":vacancy,
+                 "contact":contact,
+                 "password":password
+             }
+             if(password===password1){
+                console.log("inserted")
+                console.log(username)
+                await col.insertOne(personDocument);
+                
+             }
+             else{
+                console.log("invalidddd");
+             }
+            
+            } catch (err) {
+             console.log(err.stack);
+         }
+         finally {
             await client.close();
         }
     }

@@ -43,3 +43,33 @@ on 21/09/2022 is <div className="box_index">{index + 1}.</div> and in css
 }
 
  removed this line from package.json in client
+
+
+// removed from navbar.js and also removed the onClick={ProfessionalScroll} 
+ const HomeScroll = () =>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+  });
+};
+const ProfessionalScroll = () =>{
+  window.scrollTo({
+    top: 800, 
+    behavior: 'smooth'
+  });
+};
+
+
+
+
+
+
+
+<div className="box">
+            
+  <div className="box_items"><b>Hospital Name:- </b> {d.name}</div>
+  <div className="box_items"><b>Application ID:- </b> {d.application_id}</div>
+  <div className="box_items"><b>Vacancy:- </b>{d.vacancy}</div>
+  <div className="box_items"><b>Contact:- </b>{d.contact}</div>
+
+</div>

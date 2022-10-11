@@ -1,0 +1,38 @@
+.login{
+    text-align: center;
+
+  }
+  
+  .content-login{
+    text-align: center;  
+  }
+
+
+  .form-control{
+    height: 50px;
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: large;
+  }
+
+  .headline_login{
+    font-size: 60px;
+
+  }
+
+
+  button{
+    border-radius: 2px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: orange
+  }
+  button:hover{
+    background-color: yellow;
+  
+  }
+  .prof_register{
+    text-align: center;
+  }
