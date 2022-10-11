@@ -73,3 +73,6 @@ const ProfessionalScroll = () =>{
   <div className="box_items"><b>Contact:- </b>{d.contact}</div>
 
 </div>
+
+
+linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0.9)), removed from app.css url() backgroung-image

@@ -20,6 +20,10 @@ table {
     background-color: white;
     color: black;
   }
+  tr:hover{
+    background-color: lightpink;
+    opacity: 0.8;
+  }
   
 
   .App{

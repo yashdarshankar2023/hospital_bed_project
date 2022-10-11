@@ -16,23 +16,23 @@ export const login = () => {
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"><b>Hospital ID</b></label>
             <br />
-            <input type="text" class="form-control" id="appid" aria-describedby="emailHelp" name="appid" />
+            <input type="number" class="form-control" id="appid" aria-describedby="emailHelp" name="appid" min="0" placeholder='Enter the Hospital ID'  required/>
             <br />
 
           </div>
           <div class="mb-3">
             <br />
             <label for="exampleInputPassword1" class="form-label"><b>Password</b></label><br />
-            <input type="text" class="form-control" id="password" name="password" /><br />
+            <input type="password" class="form-control" id="password" name="password" placeholder='Enter your password' required /><br />
 
           </div>
           <div class="mb-3">
             <br />
             <label for="exampleInputPassword1" class="form-label"><b>New Vacancy</b></label><br /><br />
-            <input type="text" class="form-control" id="vacancy" name="vacancy" /><br /><br />
+            <input type="number" class="form-control" id="vacancy" name="vacancy" min="0" placeholder='Enter the new vacancy' required/><br /><br />
           </div>
           <br />
-          <button type="submit" class="btn btn-primary">Change Vacancy</button>
+          <button type="submit" class="btn btn-primary">Change</button>
 
         </form>
 

@@ -6,7 +6,7 @@ body{
 
 
     
-  background-image: linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(./assets/bg.jpg);
+  background-image:url(./assets/bg.jpg);
   background-attachment: fixed;
   color: white;
   align-content: left-center;
@@ -47,7 +47,9 @@ body{
 label{
   font-size: x-large;
 }
-
+Link{
+  text-decoration: none;
+}
 
 
 footer{

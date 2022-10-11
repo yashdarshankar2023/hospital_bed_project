@@ -22,6 +22,9 @@
 
 }
 
+.link1{
+    text-decoration: none;
+}
 .navmenu{
     display: flex;
 }
