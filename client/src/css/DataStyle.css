@@ -1,33 +1,40 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 1400px;
-    margin-left: 5%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 40px;
-  
-  }
-  
-  tr:nth-child(even) {
-    background-color: lightblue;
-    color: black;
-  }
-  tr:nth-child(odd) {
-    background-color: white;
-    color: black;
-  }
-  tr:hover{
-    background-color: lightpink;
-    opacity: 0.8;
-  }
-  
+/* Also Written Log pages here do don't look anywhere else...*/
 
-  .App{
-    align-items: center;
-    text-align: center;
-  }
-  
+table {
+  font-family: 'Arial';
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+    0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05),
+    0px 30px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+
+td {
+  color: #555;
+}
+
+
+tr::hover {
+  background: #f4f4f4;
+}
+
+th,td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 30px 60px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th {
+  background: #00cccc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
